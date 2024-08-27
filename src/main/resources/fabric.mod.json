@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "linux",
+	"id": "minefetch",
 	"version": "${version}",
 	"name": "Minefetch",
 	"description": "Neofetch-inspired command for Minecraft",
@@ -11,22 +11,19 @@
 		"homepage": "https://turitoyuenan.github.io/",
 		"sources": "https://github.com/TuritoYuenan/Minefetch"
 	},
-	"license": "Minecraft Mod Public Licence",
-	"icon": "assets/linux/icon.png",
+	"license": "CC0-1.0",
+	"icon": "assets/minefetch/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"vn.turito.minefetch.Minefetch"
 		]
 	},
-	"mixins": [
-		"minefetch.mixins.json"
-	],
 	"depends": {
-		"fabricloader": ">=0.13.3",
-		"fabric": "*",
-		"minecraft": "1.18.x",
-		"java": ">=17"
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
 	},
 	"suggests": {}
 }
